@@ -1,32 +1,73 @@
 # 🏁 Smart Line Follower Robot with PID Control
-This repository contains the source code and circuit design for an autonomous Line Follower Robot built using an Arduino Nano and a 5-channel IR sensor array. The robot uses a PID (Proportional-Integral-Derivative) controller to ensure smooth and precise line tracking.
 
-**🚀 Features**
-**PID Control:** Implements a feedback loop to minimize tracking errors and prevent overshooting.
-**5-Channel IR Sensor:** High-resolution sensing to detect line positions with weighted error values.
-**Efficient Power Management:** Powered by dual 18650 Li-ion batteries with a buck converter for stable voltage regulation.
-**Robust Drive System:** Utilizes the TB6612FNG motor driver for high-efficiency dual DC motor control.
+This repository contains the source code and circuit design for an
+autonomous **Line Follower Robot** built using an **Arduino Nano** and a
+**5-channel IR sensor array**. The robot employs a **PID
+(Proportional--Integral--Derivative) control algorithm** to achieve
+smooth, stable, and precise line tracking.
 
-**🛠️ Components Used**
-**Microcontroller:** Arduino Nano
-**Motor Driver:** TB6612FNG
-**Sensors:** 5-Way IR Reflectance Sensor Array
-**Motors:** 2x N20 Gear Motors
-**Power:** 2x 18650 Li-ion batteries, LM2596 Buck Converter, and a SPST Rocker Switch
-**Software:** Arduino IDE, Cirkit Designer (for schematics)
+------------------------------------------------------------------------
 
-**💻 Code Structure**
-The core logic resides in the PID calculation within the loop() function:
-**sensorValue():** Reads the IR sensors and returns a weighted error (from -2 to 2) based on the line's position.
-**PID Calculation:** Computes the adjustment value using kp, ki, and kd constants.
-**moveRobot(): **Adjusts the PWM duty cycle for each motor to steer the robot back onto the line.
+## 🚀 Features
 
-**👥 Team Members**
-1)
-2)
-3)
-4)
-5)
+-   **PID Control:** Implements a closed-loop feedback system to
+    minimize tracking errors, reduce oscillations, and prevent
+    overshooting.
+-   **5-Channel IR Sensor Array:** Provides high-resolution line
+    detection with weighted error calculation for accurate positioning.
+-   **Efficient Power Management:** Powered by dual 18650 Li-ion
+    batteries with a buck converter to ensure stable voltage regulation.
+-   **Robust Drive System:** Uses the TB6612FNG motor driver for
+    efficient and reliable dual DC motor control.
 
-📜 License
-This project is open-source and intended for educational, research, and competitive robotics use.
+------------------------------------------------------------------------
+
+## 🛠️ Components Used
+
+-   **Microcontroller:** Arduino Nano\
+-   **Motor Driver:** TB6612FNG\
+-   **Sensors:** 5-Way IR Reflectance Sensor Array\
+-   **Motors:** 2× N20 DC Gear Motors\
+-   **Power Supply:**
+    -   2× 18650 Li-ion Batteries\
+    -   LM2596 Buck Converter\
+    -   SPST Rocker Switch\
+-   **Software Tools:**
+    -   Arduino IDE\
+    -   Cirkit Designer (for circuit schematics)
+
+------------------------------------------------------------------------
+
+## 💻 Code Structure
+
+The core control logic is implemented inside the `loop()` function using
+a PID controller.
+
+-   **sensorValue():**\
+    Reads data from the IR sensors and returns a weighted error value
+    ranging from **-2 to +2**, depending on the position of the line.
+
+-   **PID Calculation:**\
+    Computes the correction value using the tuned PID constants (`kp`,
+    `ki`, `kd`) based on current, accumulated, and previous errors.
+
+-   **moveRobot():**\
+    Adjusts the PWM duty cycle of each motor to steer the robot back
+    toward the center of the line.
+
+------------------------------------------------------------------------
+
+## 👥 Team Members
+
+1.  **Md Manowar Alam** -- *Team Leader*\
+2.  **Shankar Hambrom**\
+3.  **Vicky Kumar Sharma**\
+4.  **Divyanka Kumari**\
+5.  **Swati Shingh**
+
+------------------------------------------------------------------------
+
+## 📜 License
+
+This project is open-source and intended for **educational, research,
+and competitive robotics** use.
