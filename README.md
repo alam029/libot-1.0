@@ -24,16 +24,16 @@ smooth, stable, and precise line tracking.
 
 ## 🛠️ Components Used
 
--   **Microcontroller:** Arduino Nano\
--   **Motor Driver:** TB6612FNG\
--   **Sensors:** 5-Way IR Reflectance Sensor Array\
--   **Motors:** 2× N20 DC Gear Motors\
+-   **Microcontroller:** Arduino Nano
+-   **Motor Driver:** TB6612FNG
+-   **Sensors:** 5-Way IR Reflectance Sensor Array
+-   **Motors:** 2× N20 DC Gear Motors
 -   **Power Supply:**
-    -   2× 18650 Li-ion Batteries\
-    -   LM2596 Buck Converter\
-    -   SPST Rocker Switch\
+    -   2× 18650 Li-ion Batteries
+    -   LM2596 Buck Converter
+    -   SPST Rocker Switch
 -   **Software Tools:**
-    -   Arduino IDE\
+    -   Arduino IDE
     -   Cirkit Designer (for circuit schematics)
 
 ------------------------------------------------------------------------
@@ -54,16 +54,6 @@ a PID controller.
 -   **moveRobot():**\
     Adjusts the PWM duty cycle of each motor to steer the robot back
     toward the center of the line.
-
-------------------------------------------------------------------------
-
-## 👥 Team Members
-
-1.  **Md Manowar Alam** -- *Team Leader*\
-2.  **Shankar Hambrom**\
-3.  **Vicky Kumar Sharma**\
-4.  **Divyanka Kumari**\
-5.  **Swati Shingh**
 
 ------------------------------------------------------------------------
 
